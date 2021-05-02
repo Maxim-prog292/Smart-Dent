@@ -1,0 +1,19 @@
+$main-color: #127BD7;
+$montserrat: 'Montserrat', sans-serif;
+$fira-sans: 'Fira Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+@import 'header';
+
+@import 'header-1024';
+@import 'header-768';
+@import 'header-480';
+@import 'header-320';
