@@ -63,6 +63,10 @@ header {
                         display: none;
                     }
                     a {
+                        display: block;
+                        height: 29px;
+                    }
+                    a#phone {
                         font-size: 20px;
                         font-weight: 700;
                         font-family: $roboto;

@@ -78,6 +78,10 @@ header .header-menu .container-top .contact .phone #menu {
   display: none;
 }
 header .header-menu .container-top .contact .phone a {
+  display: block;
+  height: 29px;
+}
+header .header-menu .container-top .contact .phone a#phone {
   font-size: 20px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -358,7 +362,7 @@ header .header-rec .container-mobil {
   header .header-menu .container-top .contact .phone {
     width: 70px;
   }
-  header .header-menu .container-top .contact .phone a {
+  header .header-menu .container-top .contact .phone a#phone {
     display: none;
   }
   header .header-menu .container-top .contact .phone #menu {
@@ -432,6 +436,135 @@ header .header-rec .container-mobil {
     display: none;
   }
 }
+@media (max-width: 376px) {
+  header {
+    width: 100vw;
+    height: 480px;
+  }
+  header .header-menu {
+    height: 40px;
+  }
+  header .header-menu .container-top {
+    width: 300px;
+    height: 40px;
+  }
+  header .header-menu .container-top .logo {
+    width: 220px;
+  }
+  header .header-menu .container-top .logo img {
+    width: 45px;
+    height: 40px;
+  }
+  header .header-menu .container-top .logo h1 {
+    font-size: 16px;
+  }
+  header .header-menu .container-top .contact {
+    width: 60px;
+    justify-content: flex-end;
+  }
+  header .header-menu .container-top .contact .location {
+    display: none;
+  }
+  header .header-menu .container-top .contact .phone img {
+    width: 25px;
+    height: 23px;
+  }
+  header .header-menu .container-top .contact .phone a#phone {
+    display: none;
+  }
+  header .header-menu .container-top .contact .phone #menu {
+    display: block;
+  }
+  header .header-menu hr {
+    display: none;
+  }
+  header .header-menu .menu {
+    display: none;
+  }
+  header .header-rec {
+    width: 375px;
+    height: 480px;
+    background: url(../images/header-bkg-mobail-320.png) no-repeat;
+    background-position: center top;
+  }
+  header .header-rec .container {
+    width: 300px;
+    height: 202px;
+  }
+  header .header-rec .container .rec-form-blur {
+    display: none;
+  }
+  header .header-rec .container .rec-form-no-blur {
+    display: none;
+  }
+  header .header-rec .container-mobil {
+    width: 300px;
+    height: 235px;
+    display: flex;
+    justify-content: center;
+  }
+  header .header-rec .container-mobil .rec-form-mobil {
+    width: 240px;
+    height: 205px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .header-rec .container-mobil .rec-form-mobil h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    border-left: none;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  header .header-rec .container-mobil .rec-form-mobil h2 span {
+    font-weight: 600;
+  }
+  header .header-rec .container-mobil .rec-form-mobil .description {
+    width: 240px;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header .header-rec .container-mobil .rec-form-mobil .description div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  header .header-rec .container-mobil .rec-form-mobil .description p {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+  }
+  header .header-rec .container-mobil .rec-form-mobil .description img {
+    display: block;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  header .header-rec .container-mobil .rec-form-mobil input[type='button'] {
+    width: 230px;
+    height: 40px;
+    margin-top: 20px;
+    background: #127BD7;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
 @media (max-width: 320px) {
   header {
     width: 100vw;
@@ -466,6 +599,10 @@ header .header-rec .container-mobil {
     height: 23px;
   }
   header .header-menu .container-top .contact .phone a {
+    display: block;
+    height: 29px;
+  }
+  header .header-menu .container-top .contact .phone a#phone {
     display: none;
   }
   header .header-menu .container-top .contact .phone #menu {
@@ -478,6 +615,7 @@ header .header-rec .container-mobil {
     display: none;
   }
   header .header-rec {
+    width: 320px;
     height: 480px;
     background: url(../images/header-bkg-mobail-320.png) no-repeat;
   }

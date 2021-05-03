@@ -1,37 +1,42 @@
-@media (max-width: 320px) {
+@media (max-width: 376px) {
     header {
         width: 100vw;
         height: 480px;
+
         .header-menu {
             height: 40px;
+
             .container-top {
                 width: 300px;
                 height: 40px;
+
                 .logo {
                     width: 220px;
+
                     img {
                         width: 45px;
                         height: 40px;
                     }
+
                     h1 {
                         font-size: 16px;
                     }
                 }
+
                 .contact {
                     width: 60px;
                     justify-content: flex-end;
+
                     .location {
                         display: none;
                     }
+
                     .phone {
                         img {
                             width: 25px;
                             height: 23px;
                         }
-                        a {
-                            display: block;
-                            height: 29px;
-                        }
+
                         a#phone {
                             display: none;
                         }
@@ -43,33 +48,41 @@
 
                 }
             }
+
             hr {
                 display: none;
             }
+
             .menu {
                 display: none;
             }
         }
+
         .header-rec {
-            width: 320px;
+            width: 375px;
             height: 480px;
             background: url(../images/header-bkg-mobail-320.png) no-repeat;
+            background-position: center top;
 
             .container {
                 width: 300px;
                 height: 202px;
+
                 .rec-form-blur {
                     display: none;
                 }
+
                 .rec-form-no-blur {
-                    display: none;   
+                    display: none;
                 }
             }
+
             .container-mobil {
                 width: 300px;
                 height: 235px;
                 display: flex;
                 justify-content: center;
+
                 .rec-form-mobil {
                     width: 240px;
                     height: 205px;
@@ -77,19 +90,21 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    h2 {
-                         font-family: $montserrat;
-                         font-size: 16px;
-                         font-weight: 500;
-                         font-style: normal;
-                         border-left: none;
-                         padding-left: 0;
-                         box-sizing: border-box;
 
-                         span {
-                             font-weight: 600;
-                         }
+                    h2 {
+                        font-family: $montserrat;
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-style: normal;
+                        border-left: none;
+                        padding-left: 0;
+                        box-sizing: border-box;
+
+                        span {
+                            font-weight: 600;
+                        }
                     }
+
                     .description {
                         width: 240px;
                         height: 70px;
@@ -121,6 +136,7 @@
                             margin-right: 10px;
                         }
                     }
+
                     input[type='button'] {
                         width: 230px;
                         height: 40px;
