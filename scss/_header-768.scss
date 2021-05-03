@@ -1,21 +1,8 @@
 @media (max-width: 768px) {
     header {
-        width: 100vw;
-        height: 750px;
         .header-menu {
-            width: inherit;
-            height: 150px;
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             .container-top {
                 width: 740px;
-                height: 95px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
                 .logo {
                     width: 410px;
                     h1 {
@@ -25,7 +12,6 @@
                 .contact {
                     width: 300px;
                     justify-content: flex-end;
-
                     .location {
                         display: none;
                     }
@@ -40,10 +26,6 @@
                 a {
                     font-size: 18px;
                     font-weight: 500;
-                    font-family: $montserrat;
-                    text-decoration: none;
-                    color: #292929;
-
                 }
                 a:nth-child(7) {
                     display: none;
@@ -68,45 +50,32 @@
                     margin-top: 75px;
                     padding: 15px;
                     h2 {
-                        font-family: $montserrat;
                         font-size: 24px;
                         font-weight: 500;
                         font-style: normal;
                         border-left: none;
                         padding-left: 0;
-                        box-sizing: border-box;
                         span {
                             font-weight: 600;
                         }
                     }
                     .description {
-                        width: 376px;
+                        width: 360px;
                         margin-top: 30px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        padding: 0;
-                        box-sizing: border-box;
                         div {
                             display: flex;
                             align-items: center;
                         }
-
-                        p {
-                            font-size: 18px;
-                            font-weight: 600;
-                            font-family: $montserrat;
-                            position: relative;
+                        div:nth-child(1){
+                            width: 114px;
                         }
                         img {
-                            display: block;
+                            display: none;
                         }
                     }
                     input[type='button'] {
-                        width: 230px;
                         height: 65px;
-                        margin-top: 30px;
+                        margin-top: 40px;
                     }
                 }
             }

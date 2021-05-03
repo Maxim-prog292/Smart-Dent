@@ -2,40 +2,27 @@
     header {
         width: 100vw;
         height: 480px;
-
         .header-menu {
             height: 40px;
-
             .container-top {
                 width: 300px;
                 height: 40px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-
                 .logo {
                     width: 220px;
-
                     img {
                         width: 45px;
                         height: 40px;
                     }
-
                     h1 {
                         font-size: 16px;
                     }
                 }
-
                 .contact {
                     width: 60px;
                     justify-content: flex-end;
-
                     .location {
                         display: none;
-
                     }
-
                     .phone {
                         img {
                             width: 25px;
@@ -52,16 +39,13 @@
 
                 }
             }
-
             hr {
                 display: none;
             }
-
             .menu {
                 display: none;
             }
         }
-
         .header-rec {
             height: 480px;
             background: url(../images/header-bkg-mobail-320.png) no-repeat;

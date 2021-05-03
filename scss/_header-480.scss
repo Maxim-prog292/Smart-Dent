@@ -1,18 +1,12 @@
 @media (max-width: 480px) {
     header {
-        width: 100vw;
         height: 380px;
-
         .header-menu {
             height: 95px;
             .container-top {
-                width: 410px;
+                width: 400px;
                 height: 95px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-
+                padding: 0 5px 0;
                 .logo {
                     width: 320px;
                     img {
@@ -23,16 +17,14 @@
                         font-size: 24px;
                     }
                 }
-
                 .contact {
                     width: 80px;
                     justify-content: flex-end;
-
                     .location {
                         display: none;
-                        
                     }
                     .phone {
+                        width: 70px;
                         a {
                             display: none;
                         }
@@ -40,7 +32,6 @@
                             display: block;
                         }
                     }
-                    
                 }
             }
             hr {
@@ -50,44 +41,38 @@
                 display: none;
             }
         }
-
         .header-rec {
             height: 295px;
             background: url(../images/header-bkg-mobail.png);
-
             .container {
-                width: 410px;
+                width: 400px;
                 height: 295px;
-
                 .rec-form-blur {
                     width: 260px;
                     height: 270px;
                     margin-top: 10px;
+                    margin-right: 10px;
                 }
-
                 .rec-form-no-blur {
                     width: 260px;
                     height: 270px;
                     margin-top: 10px;
                     padding: 20px;
-
+                    margin-right: 10px;
                     h2 {
-                        font-family: $montserrat;
                         font-size: 16px;
                         font-weight: 500;
                         font-style: normal;
                         border-left: none;
                         padding-left: 0;
                         box-sizing: border-box;
-
                         span {
                             font-weight: 600;
                         }
                     }
-
                     .description {
                         width: 200px;
-                        margin-top: 30px;
+                        margin-top: 15px;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -102,15 +87,12 @@
                             font-size: 14px;
                             font-weight: 600;
                             font-family: $montserrat;
-                            position: relative;
                         }
                         img {
                             display: block;
                         }
                     }
-
                     input[type='button'] {
-                        width: 230px;
                         height: 65px;
                         margin-top: 30px;
                     }
