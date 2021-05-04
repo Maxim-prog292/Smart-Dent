@@ -34,12 +34,23 @@
                         </div>
                         <div class="phone">
                             <a href="tel: +74959919127"><img src="icons/phone.png" alt=""></a>
-                            <img id="menu" src="icons/menu.svg" alt="">
+                            <img id="menu" src="icons/menu.svg" alt="" onclick="prevMenu()">
+                            <img id="closeMobileMenu" src="icons/closeMenuMobile.png" alt="" onclick="prevMenu()">
                             <a href="tel: +74959919127" title="Свяжитесь с нами" id="phone">+7 (495) 991-91-27</a>
                         </div>
                         <!-- contact -->
                     </div>
                     <!-- container-top -->
+                </div>
+                <div id="mobile-menu" style="display: none;">
+                    <ul>
+                        <li><a href="#about-us">О клинике</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#stocks">Акции</a></li>
+                        <li><a href="#doctors">Врачи</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                    </ul>
                 </div>
                 <hr />
                     <nav class="menu">
@@ -87,5 +98,8 @@
         </header>
         <!-- wrapper -->
     </div>
+    <script src="js/main.js"> 
+        
+    </script>
 </body>
 </html>

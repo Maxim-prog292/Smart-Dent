@@ -62,8 +62,12 @@ header {
                     #menu {
                         display: none;
                     }
+                    #closeMobileMenu {
+                        display: none;
+                    }
                     a {
-                        display: block;
+                        display: flex;
+                        align-items: center;
                         height: 29px;
                     }
                     a#phone {
@@ -75,6 +79,9 @@ header {
                     }
                 }
             }
+        }
+        div#mobile-menu {
+            display: none;
         }
         hr {
             width: inherit;

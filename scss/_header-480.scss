@@ -2,10 +2,11 @@
     header {
         height: 380px;
         .header-menu {
-            height: 95px;
+            height: 65px;
+            position: relative;
             .container-top {
                 width: 400px;
-                height: 95px;
+                height: 65px;
                 padding: 0 5px 0;
                 .logo {
                     width: 320px;
@@ -31,6 +32,37 @@
                         #menu {
                             display: block;
                         }
+                        #closeMobileMenu {
+                            display: none;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+            div#mobile-menu {
+                width: 100%;
+                height: 300px;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 2;
+                position: absolute;
+                top: 64px;
+                ul {
+                    list-style: none;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: $montserrat;
+                    a {
+                        text-decoration: none;
+                        color: #292929;
+                        line-height: 45px;
+                    }
+                    a:hover {
+                        color: $main-color;
                     }
                 }
             }
