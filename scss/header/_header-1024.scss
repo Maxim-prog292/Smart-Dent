@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+    header {
+        .header-menu {
+            .container-top {
+                width: 950px;
+                .contact {
+                    justify-content: flex-end;
+                    .location {
+                        display: none;   
+                    }
+                    #menu {
+                        display: none;
+                    }
+                }
+            }
+            .menu {
+                width: 950px;
+                padding: 0 20px 0;
+            }
+        }
+        .header-rec {
+            background: url(../images/header-bkg-3.jpg);
+            .container {
+                width: 950px;
+                .rec-form-blur {
+                    width: 560px;
+                    height: 370px;
+                }
+                .rec-form-no-blur {
+                    width: 560px;
+                    height: 370px;
+                    padding: 45px;
+                }
+            }
+            .container-mobil {
+                display: none;
+            }
+        }
+    }
+}

@@ -20,21 +20,3 @@
             closeMenuMobile.style.display = 'none';
         }
  };
-
- 
-// mobile menu
-const mobileMenu = document.getElementById('mobile-menu');
-// button close
-const closeMenuMobile = document.getElementById('closeMobileMenu');
-// button open
-    const openMenuMobile = document.getElementById('menu');
-
- if (document.documentElement.clientWidth > 425) {
-    mobileMenu.style.display = 'none';
-    openMenuMobile.style.display = 'none';
-    closeMenuMobile.style.display = 'none';
- } else {
-    mobileMenu.style.display = 'none';
-    openMenuMobile.style.display = 'block';
-    closeMenuMobile.style.display = 'none';
- }

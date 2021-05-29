@@ -7,14 +7,32 @@ $roboto: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
+html {
+    overflow-x: hidden;
+}
 #wrapper {
     display: flex;
     flex-direction: column;
 }
-@import 'header';
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@import 'other/scrollbar';
+@import 'header/header';
+@import 'about_us/aboutus';
 
-@import 'header-1024';
-@import 'header-768';
-@import 'header-480';
-@import 'header-375';
-@import 'header-320';
+
+
+// header
+@import 'header/header-1024';
+@import 'header/header-768';
+@import 'header/header-480';
+@import 'header/header-375';
+@import 'header/header-320';
+// aboutus
+@import 'about_us/aboutus-1024';
+@import 'about_us/aboutus-768';
+@import 'about_us/aboutus-480';
+@import 'about_us/aboutus-375';

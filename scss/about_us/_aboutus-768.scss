@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+    #about-us {
+        height: 680px;
+        .container {
+            width: 720px;
+            height: 630px;
+            .img-description {
+                height: 370px;
+                img.nauka {
+                    width: 340px;
+                    height: 255px;
+                }
+                .description {
+                    width: 340px;
+                    height: 255px;
+                    position: relative;
+                }
+                p {
+                    font-size: 16px;
+                }
+                p.desc-top {
+                    height: 255px;
+                    line-height: 32px;
+                }
+                p.desc-bottom {
+                    width: 700px;
+                    position: absolute;
+                    bottom: -70px;
+                    left: -370px;
+                    line-height: 32px;
+                }
+            }
+
+            .stat {
+                width: 720px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .stat-card {
+                    width: 160px;
+                    height: 85px;
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 25px rgba(18, 123, 215, 0.15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    p {
+                        color: $main-color;
+                        font-family: $montserrat;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    img.count {
+                        position: absolute;
+                        top: -20px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
