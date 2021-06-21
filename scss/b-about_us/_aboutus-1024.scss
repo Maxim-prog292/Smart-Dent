@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+    #about-us {
+        height: 800px;
+        .container {
+            width: 950px;
+            .img-description {
+                width: inherit;
+                height: 370px;
+                align-items: center;
+                img.nauka {
+                    width: 425px;
+                    height: 320px;
+                }
+                .description {
+                    width: 480px;
+                    height: 320px;
+
+                }
+            }
+        }
+    }
+}

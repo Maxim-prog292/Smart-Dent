@@ -1,0 +1,156 @@
+.swiper-container {
+    width: 1200px;
+    height: 420px;
+    border-radius: 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .swiper-wrapper {
+        position: relative;
+        width: 5040px;
+        height: 330px;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+        border-radius: 80px;
+        
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 1010px !important;
+        height: 330px;
+        text-align: center;
+        font-size: 18px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 40px rgba(18, 123, 215, 0.15);
+        border-radius: 80px;
+        margin-right: 0 !important;
+        .description {
+            width: 370px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            p {
+                font-size: 24px;
+                font-family: $montserrat;
+                text-align: left;
+                font-weight: 700;
+                line-height: 1.5;
+                color: #292929;
+                margin: 70px 0 115px;
+
+            }
+            p.mark {
+                font-size: 14px;
+                font-family: $montserrat;
+                text-align: left;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+        .signup {
+            width: 250px;
+            height: 145px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                font-family: $montserrat;
+                font-size: 36px;
+                color: $main-color;
+                font-weight: 700;
+                margin-bottom: 45px;
+            }
+            button {
+                width: 230px;
+                height: 65px;
+                background: $main-color;
+                border: none;
+                border-radius: 8px;
+                font-weight: 700;
+                font-size: 20px;
+                color: #FFFFFF;
+                transition: 450ms;
+            }
+            button:hover {
+                width: 245px;
+                height: 75px;
+            }
+            button:active {
+                width: 230px;
+                height: 65px;
+                background: #2879BD;
+            }
+        }
+    }
+    .slide-1 {
+        margin-left: 95px !important;
+        // margin-right: 20px !important;
+    }
+    .slide-2 {
+        margin-left: 220px !important;
+    }
+    .slide-3 {
+        margin-left: 220px !important;
+    }
+    .slide-4 {
+        margin-left: 220px !important;
+    }
+    #button-next, #button-prev {
+        width: 60px;
+        height: 60px;
+        background: #ffffff;
+        position: absolute;
+        right: 20px;
+        top: 175px;
+        z-index: 1;
+        box-shadow: 0px 4px 40px rgba(18, 123, 215, 0.15);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #button-prev {
+        left: 20px;
+    }
+    .swiper-button-disabled {
+        opacity: .4;
+    }
+
+    .swiper-pagination {
+        width: 1010px;
+        height: 20px;
+        position: absolute;
+        bottom: 5px;
+        left: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 450px;
+        box-sizing: border-box;
+        z-index: 1;
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 50%;
+            background: #C4C4C4;
+            
+            margin-left: 0 !important;
+            
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $main-color;
+            box-shadow: 0px 0px 10px 2px #127BD7;
+        }
+
+    }
+}

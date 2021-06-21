@@ -1,0 +1,141 @@
+@media (max-width: 320px) {
+    header {
+        width: 100vw;
+        height: 480px;
+        .header-menu {
+            height: 40px;
+            .container-top {
+                width: 300px;
+                height: 40px;
+                .logo {
+                    width: 220px;
+                    img {
+                        width: 45px;
+                        height: 40px;
+                    }
+                    h1 {
+                        font-size: 16px;
+                    }
+                }
+                .contact {
+                    width: 60px;
+                    justify-content: flex-end;
+                    .location {
+                        display: none;
+                    }
+                    .phone {
+                        img {
+                            width: 25px;
+                            height: 23px;
+                        }
+                        a {
+                            display: block;
+                            height: 29px;
+                        }
+                        a#phone {
+                            display: none;
+                        }
+
+                        #menu {
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+            hr {
+                display: none;
+            }
+            .menu {
+                display: none;
+            }
+        }
+        .header-rec {
+            width: 320px;
+            height: 480px;
+            background: url(../images/header-bkg-mobail-320.png) no-repeat;
+
+            .container {
+                width: 300px;
+                height: 202px;
+                .rec-form-blur {
+                    display: none;
+                }
+                .rec-form-no-blur {
+                    display: none;   
+                }
+            }
+            .container-mobil {
+                width: 300px;
+                height: 235px;
+                display: flex;
+                justify-content: center;
+                .rec-form-mobil {
+                    width: 240px;
+                    height: 205px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2 {
+                         font-family: $montserrat;
+                         font-size: 16px;
+                         font-weight: 500;
+                         font-style: normal;
+                         border-left: none;
+                         padding-left: 0;
+                         box-sizing: border-box;
+
+                         span {
+                             font-weight: 600;
+                         }
+                    }
+                    .description {
+                        width: 240px;
+                        height: 70px;
+                        margin-top: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding: 0;
+                        box-sizing: border-box;
+
+                        div {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 600;
+                            font-family: $montserrat;
+                            position: relative;
+                        }
+
+                        img {
+                            display: block;
+                            margin-top: 5px;
+                            margin-right: 10px;
+                        }
+                    }
+                    input[type='button'] {
+                        width: 230px;
+                        height: 40px;
+                        margin-top: 20px;
+                        background: $main-color;
+                        color: #fff;
+                        font-size: 16px;
+                        font-family: $montserrat;
+                        font-weight: 700;
+                        border: none;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,9 +7,13 @@ $roboto: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
-html {
+.overflow {
+    overflow-y: hidden;
+}
+body {
     overflow-x: hidden;
 }
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -19,20 +23,36 @@ html {
     flex-direction: column;
     align-items: center;
 }
-@import 'other/scrollbar';
-@import 'header/header';
-@import 'about_us/aboutus';
+@import 'z-other/scrollbar';
+// header
+@import 'a-header/header';
+// aboutus
+@import 'b-about_us/aboutus';
+// whywe
+@import 'c-why-we/why-we';
+// services
+@import 'd-services/services';
+// stock
+@import 'f-stock/stock';
 
 
 
 // header
-@import 'header/header-1024';
-@import 'header/header-768';
-@import 'header/header-480';
-@import 'header/header-375';
-@import 'header/header-320';
+@import 'a-header/header-1024';
+@import 'a-header/header-768';
+@import 'a-header/header-480';
+@import 'a-header/header-375';
+@import 'a-header/header-320';
 // aboutus
-@import 'about_us/aboutus-1024';
-@import 'about_us/aboutus-768';
-@import 'about_us/aboutus-480';
-@import 'about_us/aboutus-375';
+@import 'b-about_us/aboutus-1024';
+@import 'b-about_us/aboutus-768';
+@import 'b-about_us/aboutus-480';
+@import 'b-about_us/aboutus-375';
+// whywe
+
+
+
+// modal
+@import 'z-modal/modal';
+// slider
+@import 'z-slider/slider';

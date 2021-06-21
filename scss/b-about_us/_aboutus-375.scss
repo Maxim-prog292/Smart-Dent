@@ -1,0 +1,49 @@
+@media (max-width: 376px) {
+    #about-us {
+        height: 1060px;
+        .container {
+            width: 300px;
+            height: 1030px;
+            h2 {
+                font-size: 22px;
+            }
+            .img-description {
+                width: inherit;
+                height: 600px;
+                flex-direction: column;
+                justify-content: space-between;
+                img.nauka {
+                    width: 300px;
+                    height: 225px;
+                }
+                .description {
+                    width: 300px;
+                    height: 290px;
+                    flex-direction: column;
+                    position: relative;
+                }
+                p.desc-top {
+                    height: 350px;
+                    line-height: 25px;
+                    text-align: justify;
+                }
+                p.desc-bottom {
+                    width: inherit;
+                    line-height: 25px;
+                    text-align: justify;
+                }
+            }
+
+            .stat {
+                width: 300px;
+                height: 270px;
+                margin-bottom: 20px;
+                .stat-card {
+                    width: 130px;
+                    height: 75px;
+                }
+            }
+            
+        }
+    }
+}

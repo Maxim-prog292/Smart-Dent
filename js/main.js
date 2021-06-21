@@ -19,4 +19,4 @@
             openMenuMobile.style.display = 'block';
             closeMenuMobile.style.display = 'none';
         }
- };
+ }
