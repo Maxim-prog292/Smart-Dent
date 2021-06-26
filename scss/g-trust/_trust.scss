@@ -1,0 +1,97 @@
+#trust {
+    width: 100%;
+    height: 935px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 1215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 32px;
+            font-family: $fira-sans;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        p.text-trust {
+            width: 1100px;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 22px;
+            font-family: $montserrat;
+            font-weight: 500;
+            margin-top: 50px;
+        }
+
+        .director {
+            width: inherit;
+            height: 490px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            .foto {
+                width: 435px;
+                height: 490px;
+            }
+            .comment {
+                width: 625px;
+                height: 410px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                margin-left: 130px;
+                .text {
+                    width: inherit;
+                    height: 350px;
+                    padding:45px 15px 50px 85px;
+                    box-sizing: border-box;
+                    box-shadow: 0px 4px 40px rgba(18, 123, 215, 0.15);
+                    position: relative;
+                    .text-one, 
+                    .text-two, 
+                    .text-three, 
+                    .text-four {
+                        width: 500px;
+                        font-size: 18px;
+                        font-style: italic;
+                        font-family: $montserrat;
+                        margin-bottom: 15px;
+                    }
+                    .text-two {
+                        width: 350px;
+                    }
+                    .text-three {
+                        margin-bottom: 30px;
+                    }
+                    .text-four {
+                        width: 400px;
+                        font-style: normal;
+                    }
+                    span {
+                        font-weight: bold;
+                        font-style: normal;
+                    }
+
+                }
+                .text::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -40px;
+                    left: -40px;
+                    width: 0; height: 0;
+                    border-style: solid;
+                    border-width: 40px;
+                    border-color: transparent transparent transparent #ffffff;
+                    transform: rotate(225deg);
+                }
+            }
+        }
+    }  
+}

@@ -1,9 +1,13 @@
-let openBtn = document.getElementById('open-modal');
+let openBtn = document.querySelectorAll('.open-modal');
 let modal = document.getElementById('modal');
 let back = document.getElementById('back');
 let overflow = document.body;
 
-openBtn.onclick = open;
+
+for (let i = 0; i < openBtn.length; i++) {
+    openBtn[i].addEventListener('click', open);
+}
+
 
 function open() {
     back.style.display = 'block';

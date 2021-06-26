@@ -34,7 +34,16 @@ body {
 @import 'd-services/services';
 // stock
 @import 'f-stock/stock';
-
+// trust
+@import 'g-trust/trust';
+// doctors
+@import 'h-doctors/doctors';
+// reviews
+@import 'i-reviews/reviews';
+// rating
+@import 'j-rating/rating';
+// portfolio
+@import 'k-portfolio/portfolio';
 
 
 // header
@@ -55,4 +64,5 @@ body {
 // modal
 @import 'z-modal/modal';
 // slider
-@import 'z-slider/slider';
+@import 'z-slider/slider-stocks';
+@import 'z-slider/slider-reviews';

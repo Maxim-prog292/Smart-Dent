@@ -1,0 +1,115 @@
+#reviews {
+    .slider-container {
+        width: 1215px;
+        height: 380px;
+        margin-top: 60px;
+        position: relative;
+        button {
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 4px 40px rgba(18, 123, 215, 0.15);
+            position: absolute;
+            top: -110px;
+        }
+        button.prev-thee {
+            left: 0;
+        }
+        button.next-thee {
+            right: 0;
+        }
+        .slider-wrap {
+            width: 1215px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .slider-line-thee {
+                width: 4880px;
+                height: 380px;
+                position: absolute;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items:center;
+                transition: 500ms;
+            }
+            .slider {
+                width: 595px;
+                height: 370px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px rgba(18, 123, 215, 0.15);
+                padding: 27px 24px 43px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    font-family: $montserrat;
+                    margin-bottom: 20px;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $montserrat;
+                }
+                span.name {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+                span.date {
+                    padding-top: 20px;
+                    box-sizing: border-box;
+                    border-top: 2px solid #c2c2c2;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $montserrat;
+                    padding-bottom: 5px;
+                    box-sizing: border-box;
+                }
+            }
+            .slider::after {
+                content: url(/images/cav.svg);
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -15px;
+                right: 20px;
+            }
+            .slider::before {
+                content: url(/images/cav.svg);
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: -15px;
+                right: 40px;
+            }
+        }
+        .pagination {
+            width: inherit;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            padding: 0 550px 0;
+            box-sizing: border-box;
+        }
+        span.btn {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #C4C4C4;
+        }
+    }
+}
