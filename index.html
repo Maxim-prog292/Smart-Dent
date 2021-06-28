@@ -65,7 +65,7 @@
                         <a href="#doctors">Врачи</a>
                         <a href="#reviews">Отзывы</a>
                         <a href="#portfolio">Портфолио</a>
-                        <a href="#photo">Фотогалерея</a>
+                        <a href="#photogallery">Фотогалерея</a>
                         <a href="#contacts">Контакты</a>
                     </nav>
             </div>
@@ -703,6 +703,65 @@
                 </div>
                 <!-- portfolio -->
             </div>
+            <div id="photogallery">
+                <!-- photogallery -->
+                <h2>Фотогалерея клиники</h2>
+                <div class="photogallery-container">
+                    <button class="closeBtn">×</button>
+                    <!-- photogallery-container -->
+                        <img class='photogallery-img' src="/images/img1.jpg" alt="img1" title="Посмотреть">
+                        <img class='photogallery-img image' src="/images/img2.jpg" alt="img2" title="Посмотреть">
+                        <img class='photogallery-img ' src="/images/img3.jpg" alt="img3" title="Посмотреть">
+                        <img class='photogallery-img' src="/images/img4.jpg" alt="img4" title="Посмотреть">
+                        <img class='photogallery-img image' src="/images/img5.jpg" alt="img5" title="Посмотреть">
+                        <img class='photogallery-img' src="/images/img6.jpg" alt="img6" title="Посмотреть">
+                        <img class='photogallery-img' src="/images/img7.jpg" alt="img7" title="Посмотреть">
+                        <img class='photogallery-img image' src="/images/img8.jpg" alt="img8" title="Посмотреть">
+                    <!-- photogallery-container -->
+                </div>
+                <!-- photogallery -->
+            </div>
+            <div id="consultation">
+                <!-- consultation -->
+                <div class="consultation-container">
+                    <!-- consultation-container -->
+                    <h2>запись на консультацию</h2>
+                    <div class="consultation-form">
+                        <!-- form -->
+                        <div class="includes" id="includes">
+                            <p><span>Бесплатная</span> консультация включает в себя:</p>
+                            <ul>
+                                <li>Первичный осмотр</li>
+                                <li>Снимки</li>
+                                <li>План лечения</li>
+                            </ul>
+                        </div>
+                        <div class="form" id="form">
+                            <form>
+                                <div class="placeholder-container">
+                                    <input type="text" name="reg"  id="formName" placeholder=" " autofocus pattern="^[а-яА-ЯеЁa-zA-Z]+$">
+                                    <label>Имя</label>
+                                </div>
+                                <div class="placeholder-container">
+                                    <input type="tel" name="reg"  id="formPhone" placeholder=" " autofocus required pattern="^[0-9]+$">
+                                    <label>Телефон</label>
+                                </div>
+                                    <input id="signup" type="button" value="Записаться">
+                                    <p>Нажимая на кнопку, я соглашаюсь на <a href="#">обработку персональных данных</a> </p>
+                                
+                            </form>
+                        </div>
+                        <div class="thanks" id="thanks">
+                            <img src="images/jackdaw.svg" alt="">
+                            <h2>Спасибо!</h2>
+                            <h3>Мы свяжемся с вами в ближайшее время</h3>
+                        </div>
+                        <!-- form -->
+                    </div>
+                    <!-- consultation-container -->
+                </div>
+                <!-- consultation -->
+            </div>
             <!-- pageMainContent -->
         </main>
         <!-- modal -->
@@ -718,11 +777,11 @@
             <div class="form" id="form">
                 <form>
                     <div class="placeholder-container">
-                        <input type="text" name="reg"  id="formName" placeholder=" " required pattern="^[а-яА-ЯеЁa-zA-Z]+$">
+                        <input type="text" name="reg"  id="formName" placeholder=" " autofocus pattern="^[а-яА-ЯеЁa-zA-Z]+$">
                         <label>Имя</label>
                     </div>
                     <div class="placeholder-container">
-                        <input type="tel" name="reg"  id="formPhone" placeholder=" " required pattern="^[0-9]+$">
+                        <input type="tel" name="reg"  id="formPhone" placeholder=" " autofocus required pattern="^[0-9]+$">
                         <label>Телефон</label>
                     </div>
                         <input id="signup" type="button" value="Записаться">

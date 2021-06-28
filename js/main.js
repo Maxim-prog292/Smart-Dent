@@ -83,9 +83,32 @@ function prevSlide(){
 }
 
 
+const image = document.querySelectorAll('.photogallery-img');
+const closeBtn = document.querySelector('.closeBtn');
+const photogallery = document.querySelector('.photogallery-container');
 
+for (let i = 0; i < image.length; i++) {
+    image[i].addEventListener('click', function() {
 
+        const img = document.createElement('img');
+        img.src = `/images/img${i+1}.jpg`;
+        img.classList.add('img-open')
+        photogallery.appendChild(img);
 
+        // image[i].classList.add('img-open');
+        back.style.display = 'block';
+        overflow.classList.add('overflow');
+        closeBtn.style.display = 'block'; 
+        
+    } );
+    closeBtn.addEventListener('click', function() {
+        // img.classList.remove('img-open');
+        photogallery.removeChild(photogallery.children[9]);
+        back.style.display = 'none';
+        overflow.classList.remove('overflow');
+        closeBtn.style.display = 'none'; 
+    })
+}
 
 
 
