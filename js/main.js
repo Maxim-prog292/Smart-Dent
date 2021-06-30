@@ -82,7 +82,7 @@ function prevSlide(){
     })     
 }
 
-
+// gallery
 const image = document.querySelectorAll('.photogallery-img');
 const closeBtn = document.querySelector('.closeBtn');
 const photogallery = document.querySelector('.photogallery-container');
@@ -92,7 +92,8 @@ for (let i = 0; i < image.length; i++) {
 
         const img = document.createElement('img');
         img.src = `/images/img${i+1}.jpg`;
-        img.classList.add('img-open')
+        img.classList.add('img-open');
+        
         photogallery.appendChild(img);
 
         // image[i].classList.add('img-open');
@@ -109,6 +110,35 @@ for (let i = 0; i < image.length; i++) {
         closeBtn.style.display = 'none'; 
     })
 }
+// sertificate
+const sertificat = document.querySelectorAll('.serteficat-img');
+const closeBtn2 = document.querySelector('.closeBtn2');
+const certificates = document.querySelector('.certificates_container');
+
+for (let i = 0; i < sertificat.length; i++) {
+    sertificat[i].addEventListener('click', function() {
+
+        const img = document.createElement('img');
+        img.src = `/images/serteficat${i+1}.jpg`;
+        img.classList.add('img-open');
+        
+        certificates.appendChild(img);
+
+        // image[i].classList.add('img-open');
+        back.style.display = 'block';
+        overflow.classList.add('overflow');
+        closeBtn2.style.display = 'block'; 
+        
+    } );
+    closeBtn2.addEventListener('click', function() {
+        // img.classList.remove('img-open');
+        certificates.removeChild(certificates.children[9]);
+        back.style.display = 'none';
+        overflow.classList.remove('overflow');
+        closeBtn2.style.display = 'none'; 
+    })
+}
+
 
 
 

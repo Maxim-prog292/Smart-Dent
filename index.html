@@ -731,27 +731,30 @@
                         <div class="includes" id="includes">
                             <p><span>Бесплатная</span> консультация включает в себя:</p>
                             <ul>
-                                <li>Первичный осмотр</li>
-                                <li>Снимки</li>
-                                <li>План лечения</li>
+                                <li><img src="/images/galochka.svg" alt="galochka" />Первичный осмотр</li>
+                                <li><img src="/images/galochka.svg" alt="galochka" />Снимки</li>
+                                <li><img src="/images/galochka.svg" alt="galochka" />План лечения</li>
                             </ul>
                         </div>
                         <div class="form" id="form">
                             <form>
                                 <div class="placeholder-container">
-                                    <input type="text" name="reg"  id="formName" placeholder=" " autofocus pattern="^[а-яА-ЯеЁa-zA-Z]+$">
+                                    <input type="text" name="reg"  id="formName" placeholder=" " />
                                     <label>Имя</label>
                                 </div>
                                 <div class="placeholder-container">
-                                    <input type="tel" name="reg"  id="formPhone" placeholder=" " autofocus required pattern="^[0-9]+$">
+                                    <input type="tel" name="reg"  id="formPhone" placeholder=" " />
                                     <label>Телефон</label>
                                 </div>
-                                    <input id="signup" type="button" value="Записаться">
-                                    <p>Нажимая на кнопку, я соглашаюсь на <a href="#">обработку персональных данных</a> </p>
-                                
+                                    <input id="consultation_signup" type="button" value="Записаться">
+                                    <div class="personaldata">
+                                        <input type="checkbox" name="personaldata" id="consultation_personaldata">
+                                        <label for="personaldata">Я согласен на обработку своих персональных данных</label>
+                                    </div>
+                                    
                             </form>
                         </div>
-                        <div class="thanks" id="thanks">
+                        <div class="thanks" id="consultation_thanks">
                             <img src="images/jackdaw.svg" alt="">
                             <h2>Спасибо!</h2>
                             <h3>Мы свяжемся с вами в ближайшее время</h3>
@@ -762,16 +765,77 @@
                 </div>
                 <!-- consultation -->
             </div>
+            <div id="doctors_certificates">
+                <!-- doctors_certificates -->
+                <h2>Фотогалерея клиники</h2>
+                <div class="certificates_container">
+                    <button class="closeBtn2">×</button>
+                    <!-- certificates_container -->
+                        <img class='serteficat-img' src="/images/serteficat1.jpg" alt="serteficat1" title="Посмотреть">
+                        <img class='serteficat-img image' src="/images/serteficat2.jpg" alt="serteficat2" title="Посмотреть">
+                        <img class='serteficat-img serteficat-height' src="/images/serteficat3.jpg" alt="serteficat3" title="Посмотреть">
+                        <img class='serteficat-img' src="/images/serteficat4.jpg" alt="serteficat4" title="Посмотреть">
+                        <img class='serteficat-img image' src="/images/serteficat5.jpg" alt="serteficat5" title="Посмотреть">
+                        <img class='serteficat-img serteficat-height' src="/images/serteficat6.jpg" alt="serteficat6" title="Посмотреть">
+                        <img class='serteficat-img' src="/images/serteficat7.jpg" alt="serteficat7" title="Посмотреть">
+                        <img class='serteficat-img image' src="/images/serteficat8.jpg" alt="serteficat8" title="Посмотреть">
+                    <!-- certificates_container -->
+                </div>
+                <!-- doctors_certificates -->
+            </div>
+            <div id="contacts">
+                <!-- contacts -->
+                <div class="contacts_container">
+                    <h2>контакты</h2>
+                    <div class="contacts_map">
+                        <div class="address">
+                            <a class="address_phone" href="tel:+74959919127">+7 (495) 991-91-27</a>
+                            <a class="address_mail" href="mailto:client@smartclinik.ru">client@smartclinik.ru</a>
+                            <p class="address_p" >Москва, улица Новолесная, д. 4</p>
+                            <p class="address_p">Метро Белорусская, Новослободская, Менделеевская</p>
+                        </div>
+                        <div class="map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaafe9dfb273e329e9354fe8c76855063a40d0b03377534180be9d1c23daff27d&amp;source=constructor" width="800" height="515" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- contacts -->
+            </div>
             <!-- pageMainContent -->
         </main>
+        <footer id="footer">
+            <!-- footer -->
+            <div class="footer_container">
+                <!-- footer_container -->
+                <div class="license">
+                    <p class="license_p">Лицензия
+                        ЛО-77-01-012287</p>
+                    <a href="#" class="license_confed">Политика конфидециальности</a>
+                </div>
+                <div class="companyname">
+                    <h2>ООО «СМАРТ КЛИНИК»
+                        УСТАНОВКА ЗУБНЫХ ИМПЛАНТОВ</h2>
+                </div>
+                <div class="contacts">
+                    <a class="contacts_phone" href="tel:++74959919127">+7 (495) 991-91-27</a>
+                    <a class="contacts_mail" href="mailto:client@smartclinik.ru">client@smartclinik.ru</a>
+                    <div class="socseti">
+                        <a href="" class="insta"></a>
+                        <a href="" class="whatsapp"></a>
+                    </div>
+                </div>
+                <!-- footer_container -->
+            </div>
+            <!-- footer -->
+        </footer>
         <!-- modal -->
         <div id="modal">
             <div class="includes" id="includes">
                 <p><span>Бесплатная</span> консультация включает в себя:</p>
                 <ul>
-                    <li>Первичный осмотр</li>
-                    <li>Снимки</li>
-                    <li>План лечения</li>
+                    <li><img src="/images/galochka.svg" alt="galochka" />Первичный осмотр</li>
+                    <li><img src="/images/galochka.svg" alt="galochka" />Снимки</li>
+                    <li><img src="/images/galochka.svg" alt="galochka" />План лечения</li>
                 </ul>
             </div>
             <div class="form" id="form">
@@ -785,8 +849,10 @@
                         <label>Телефон</label>
                     </div>
                         <input id="signup" type="button" value="Записаться">
-                        <p>Нажимая на кнопку, я соглашаюсь на <a href="#">обработку персональных данных</a> </p>
-                    
+                        <div class="personaldata">
+                            <input type="checkbox" name="personaldata" id="modal_personaldata">
+                            <label for="personaldata">Я согласен на обработку своих персональных данных</label>
+                        </div>
                 </form>
             </div>
             <div class="thanks" id="thanks">
@@ -802,6 +868,7 @@
     <script src="js/main.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/InitSwiper.js"></script>
+
     
 </body>
 </html>

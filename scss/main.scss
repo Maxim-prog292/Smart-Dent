@@ -7,6 +7,9 @@ $roboto: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+    }
 .overflow {
     overflow-y: hidden;
 }
@@ -48,7 +51,12 @@ body {
 @import 'l-photogallery/photogallery';
 // photogallery
 @import 'm-consultation/consultation';
-
+// sertificate
+@import 'n-sertificate/sertificate';
+// contacts
+@import 'o-contacts/contacts';
+// footer
+@import 'p-footer/footer';
 
 // header
 @import 'a-header/header-1024';

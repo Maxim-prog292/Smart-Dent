@@ -12,6 +12,7 @@ for (let i = 0; i < openBtn.length; i++) {
 function open() {
     back.style.display = 'block';
     modal.style.display = 'flex';
+    modal.classList.add('open');
     overflow.classList.add('overflow');  
 }
 

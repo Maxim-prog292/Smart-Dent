@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 .overflow {
   overflow-y: hidden; }
 
@@ -30,7 +33,7 @@ body {
           align-items: center; }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
   border-radius: 5px; }
@@ -1228,7 +1231,9 @@ header {
     #photogallery .photogallery-container img {
       border-radius: 15px;
       margin-bottom: 10px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: 500ms;
+      transition: 500ms; }
     #photogallery .photogallery-container img.image {
       margin-top: 10px;
       margin-bottom: 0; }
@@ -1241,7 +1246,10 @@ header {
     margin-top: 0 !important;
     top: -150px;
     z-index: 100;
-    cursor: default !important; }
+    cursor: default !important;
+    opacity: 0;
+    -webkit-animation: ani 0.5s forwards;
+            animation: ani 0.5s forwards; }
   #photogallery .closeBtn {
     position: absolute;
     top: -220px;
@@ -1255,6 +1263,17 @@ header {
     z-index: 100;
     display: none; }
 
+@-webkit-keyframes ani {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes ani {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 #consultation {
   width: 100%;
   height: 830px;
@@ -1337,8 +1356,16 @@ header {
         #consultation .consultation-form .includes ul li {
           font-size: 20px;
           font-family: "Montserrat", sans-serif;
-          font-weight: 600;
-          line-height: 2.7; }
+          font-weight: 600; }
+        #consultation .consultation-form .includes ul li:first-child {
+          margin-top: 10px; }
+        #consultation .consultation-form .includes ul li:nth-child(2) {
+          margin-top: 35px; }
+        #consultation .consultation-form .includes ul li:last-child {
+          margin-top: 35px; }
+        #consultation .consultation-form .includes ul li img {
+          margin-right: 10px;
+          vertical-align: middle; }
     #consultation .consultation-form .form {
       width: 365px;
       height: calc(560px - 140px);
@@ -1359,7 +1386,8 @@ header {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-direction: column;
+        position: absolute; }
       #consultation .consultation-form .form .placeholder-container {
         position: relative; }
       #consultation .consultation-form .form .placeholder-container label {
@@ -1380,7 +1408,7 @@ header {
         font-size: 14px;
         background-color: #BFE2FF; }
       #consultation .consultation-form .form input {
-        margin-bottom: 35px;
+        margin-bottom: 50px;
         font-size: 22px; }
       #consultation .consultation-form .form input[type='text'] {
         width: 340px;
@@ -1427,25 +1455,44 @@ header {
       #consultation .consultation-form .form input[type="button"]:active {
         width: 240px;
         background: #2879BD; }
-      #consultation .consultation-form .form p {
-        width: 290px;
-        font-weight: 400;
-        font-size: 12px;
-        color: #292929;
-        font-family: "Roboto", sans-serif;
-        line-height: 2; }
-        #consultation .consultation-form .form p a {
-          color: #292929; }
-  #consultation #back {
-    width: 10000px;
-    height: 10000px;
-    background: black;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    display: none; }
+      #consultation .consultation-form .form div.personaldata {
+        height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #consultation .consultation-form .form div.personaldata input#consultation_personaldata {
+          display: none; }
+        #consultation .consultation-form .form div.personaldata label[for='personaldata'] {
+          width: 330px;
+          font-weight: 400;
+          font-size: 12px;
+          color: #292929;
+          font-family: "Roboto", sans-serif;
+          line-height: 2;
+          position: relative;
+          margin-left: 30px;
+          cursor: pointer; }
+        #consultation .consultation-form .form div.personaldata label[for='personaldata']::after {
+          content: '';
+          width: 22px;
+          height: 22px;
+          border: 1px solid black;
+          position: absolute;
+          left: -30px;
+          cursor: pointer; }
+        #consultation .consultation-form .form div.personaldata input#consultation_personaldata:checked + [for='personaldata']::after {
+          background: url(/images/checked.svg) no-repeat center/90%;
+          background-size: content-box; }
   #consultation .thanks {
     width: 100%;
     display: none;
@@ -1469,6 +1516,298 @@ header {
     #consultation .thanks h3 {
       font-size: 24px;
       font-weight: 600; }
+
+#doctors_certificates {
+  width: 100%;
+  height: 515px;
+  background: #DFEFFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #doctors_certificates h2 {
+    font-size: 36px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    color: #292929;
+    opacity: .8;
+    text-transform: uppercase;
+    margin-top: 40px; }
+  #doctors_certificates .certificates_container {
+    width: 1215px;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    position: relative; }
+    #doctors_certificates .certificates_container .serteficat-img {
+      width: 245px;
+      height: 160px; }
+    #doctors_certificates .certificates_container .serteficat-height {
+      width: 215px;
+      height: 310px; }
+    #doctors_certificates .certificates_container img {
+      border-radius: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    #doctors_certificates .certificates_container img.image {
+      margin-top: 10px;
+      margin-bottom: 0; }
+    #doctors_certificates .certificates_container .serteficat-height {
+      margin: 0; }
+  #doctors_certificates .img-open {
+    width: 555px;
+    height: 555px;
+    border-radius: 50px !important;
+    position: absolute;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    top: -150px;
+    z-index: 100;
+    cursor: default !important;
+    opacity: 0;
+    -webkit-animation: ani 0.5s forwards;
+            animation: ani 0.5s forwards; }
+  #doctors_certificates .closeBtn2 {
+    position: absolute;
+    top: -220px;
+    right: 300px;
+    padding: 30px;
+    font-size: 38px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    z-index: 100;
+    display: none; }
+
+@keyframes ani {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#contacts {
+  width: 100%;
+  height: 895px;
+  padding-top: 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #contacts .contacts_container {
+    width: 1215px;
+    height: 715px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #contacts h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    color: #292929;
+    opacity: .8;
+    font-family: "Fira Sans", sans-serif; }
+  #contacts .contacts_map {
+    width: 1215px;
+    height: 515px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 60px; }
+  #contacts .address {
+    width: 415px;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #contacts .address .address_phone, #contacts .address .address_mail, #contacts .address .address_p {
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      color: #292929;
+      font-weight: 500;
+      margin: 10px 0 0 5px;
+      text-decoration: none; }
+    #contacts .address .address_mail {
+      font-size: 18px;
+      color: #127BD7;
+      margin: 35px 0 20px 5px;
+      text-decoration: none; }
+    #contacts .address .address_p {
+      width: 350px;
+      font-size: 18px;
+      color: #292929;
+      margin: 0 0 25px 5px;
+      text-decoration: none;
+      line-height: 2; }
+    #contacts .address .map iframe {
+      border-radius: 15px; }
+
+#footer {
+  width: 100%;
+  height: 240px;
+  background: #127BD7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #footer .footer_container {
+    width: 1215px;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #footer .license {
+    width: 230px;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #footer .license .license_p, #footer .license .license_confed {
+      width: 135px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 2;
+      margin-top: 55px; }
+    #footer .license .license_confed {
+      width: 230px;
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 10px; }
+  #footer .companyname {
+    width: 430px;
+    height: inherit;
+    text-align: center; }
+    #footer .companyname h2 {
+      width: 430px;
+      font-size: 22px;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-top: 55px; }
+  #footer .contacts {
+    width: 230px;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    #footer .contacts .contacts_phone, #footer .contacts .contacts_mail {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 55px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      text-decoration: none; }
+    #footer .contacts .contacts_mail {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 400; }
+    #footer .contacts .socseti {
+      width: 130px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #footer .contacts .socseti .insta, #footer .contacts .socseti .whatsapp {
+        display: block;
+        background: #fff url(/images/Vector.svg) no-repeat center;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%; }
+      #footer .contacts .socseti .whatsapp {
+        background: #fff url(/images/whatsapp.svg) no-repeat center; }
 
 @media (max-width: 1024px) {
   header .header-menu .container-top {
@@ -2225,8 +2564,16 @@ header {
       #modal .includes ul li {
         font-size: 20px;
         font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        line-height: 2.7; }
+        font-weight: 600; }
+      #modal .includes ul li:first-child {
+        margin-top: 10px; }
+      #modal .includes ul li:nth-child(2) {
+        margin-top: 35px; }
+      #modal .includes ul li:last-child {
+        margin-top: 35px; }
+      #modal .includes ul li img {
+        margin-right: 10px;
+        vertical-align: middle; }
   #modal .form {
     width: 365px;
     height: calc(560px - 140px);
@@ -2268,7 +2615,7 @@ header {
       font-size: 14px;
       background-color: #BFE2FF; }
     #modal .form input {
-      margin-bottom: 35px;
+      margin-bottom: 50px;
       font-size: 22px; }
     #modal .form input[type='text'] {
       width: 340px;
@@ -2315,19 +2662,48 @@ header {
     #modal .form input[type="button"]:active {
       width: 240px;
       background: #2879BD; }
-    #modal .form p {
-      width: 290px;
-      font-weight: 400;
-      font-size: 12px;
-      color: #292929;
-      font-family: "Roboto", sans-serif;
-      line-height: 2; }
-      #modal .form p a {
-        color: #292929; }
+    #modal .form div.personaldata {
+      height: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #modal .form div.personaldata input#modal_personaldata {
+        display: none; }
+      #modal .form div.personaldata label[for='personaldata'] {
+        width: 330px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #292929;
+        font-family: "Roboto", sans-serif;
+        line-height: 2;
+        position: relative;
+        margin-left: 30px;
+        cursor: pointer; }
+      #modal .form div.personaldata label[for='personaldata']::after {
+        content: '';
+        width: 22px;
+        height: 22px;
+        border: 1px solid black;
+        position: absolute;
+        left: -30px;
+        cursor: pointer; }
+      #modal .form div.personaldata input:checked + [for='personaldata']::after {
+        background: url(/images/checked.svg) no-repeat center/90%;
+        background-size: content-box; }
 
 #back {
-  width: 10000px;
-  height: 10000px;
+  width: 90000px;
+  height: 90000px;
   background: black;
   opacity: 0.3;
   position: absolute;
@@ -2336,6 +2712,16 @@ header {
   z-index: 90;
   display: none; }
 
+.open {
+  opacity: 0;
+  -webkit-animation: ani 0.5s forwards;
+          animation: ani 0.5s forwards; }
+
+@keyframes ani {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .thanks {
   width: 100%;
   display: none;
