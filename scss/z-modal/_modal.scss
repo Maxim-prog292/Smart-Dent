@@ -8,12 +8,22 @@
     justify-content: space-between;
     padding: 70px 100px;
     box-sizing: border-box;
-    position:absolute;
+    position: fixed;
     left:50%;
     top:50%;
     transform:translate(-50%,-50%);
     z-index: 100;
-
+    .closeButton {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 32px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
     .includes {
         width: 445px;
         height: calc(560px - 140px);
@@ -151,7 +161,7 @@
             input#modal_personaldata {
                 display: none;
             }
-            label[for='personaldata'] {
+            label[for='modal_personaldata'] {
                 width: 330px;
                 font-weight: 400;
                 font-size: 12px;
@@ -162,7 +172,7 @@
                 margin-left: 30px;
                 cursor: pointer;
             }
-            label[for='personaldata']::after {
+            label[for='modal_personaldata']::after {
                 content: '';
                 width: 22px;
                 height: 22px;
@@ -171,7 +181,7 @@
                 left: -30px;
                 cursor: pointer;
             }
-            input:checked + [for='personaldata']::after {
+            input:checked + [for='modal_personaldata']::after {
                 background: url(/images/checked.svg) no-repeat center/90%;
                 background-size: content-box;
                 
@@ -182,7 +192,7 @@
 
 #back{
     width: 90000px;
-    height: 90000px;
+    height: 11575px;
     background: black;
     opacity: 0.3;
     position: absolute;

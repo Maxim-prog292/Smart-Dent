@@ -96,19 +96,20 @@ for (let i = 0; i < image.length; i++) {
         
         photogallery.appendChild(img);
 
-        // image[i].classList.add('img-open');
-        back.style.display = 'block';
-        overflow.classList.add('overflow');
-        closeBtn.style.display = 'block'; 
         
-    } );
-    closeBtn.addEventListener('click', function() {
-        // img.classList.remove('img-open');
-        photogallery.removeChild(photogallery.children[9]);
-        back.style.display = 'none';
-        overflow.classList.remove('overflow');
-        closeBtn.style.display = 'none'; 
-    })
+        back.style.display = 'block';
+        closeBtn.style.display = 'block'; 
+    
+        closeBtn.addEventListener('click', function() {
+            const openImg = document.querySelectorAll('.img-open');
+            
+            for ( let i = 0; i < openImg.length; i++) {
+                openImg[i].remove();
+                back.style.display = 'none';
+                closeBtn.style.display = 'none'; 
+            }
+        })
+    });
 }
 // sertificate
 const sertificat = document.querySelectorAll('.serteficat-img');
@@ -116,28 +117,30 @@ const closeBtn2 = document.querySelector('.closeBtn2');
 const certificates = document.querySelector('.certificates_container');
 
 for (let i = 0; i < sertificat.length; i++) {
+
     sertificat[i].addEventListener('click', function() {
 
-        const img = document.createElement('img');
-        img.src = `/images/serteficat${i+1}.jpg`;
-        img.classList.add('img-open');
+        const sertificatCreated = document.createElement('img');
+        sertificatCreated.src = `/images/serteficat${i+1}.jpg`;
+        sertificatCreated.classList.add('img-open');
         
-        certificates.appendChild(img);
+        certificates.appendChild(sertificatCreated);
 
-        // image[i].classList.add('img-open');
         back.style.display = 'block';
-        overflow.classList.add('overflow');
         closeBtn2.style.display = 'block'; 
         
-    } );
-    closeBtn2.addEventListener('click', function() {
-        // img.classList.remove('img-open');
-        certificates.removeChild(certificates.children[9]);
-        back.style.display = 'none';
-        overflow.classList.remove('overflow');
-        closeBtn2.style.display = 'none'; 
-    })
-}
+    
+        closeBtn2.addEventListener('click', function() {
+            const sertificatForClose = document.querySelectorAll('.img-open');
+
+            for (let i = 0; i < sertificatForClose.length; i++) {
+                sertificatForClose[i].remove();
+                back.style.display = 'none';
+                closeBtn2.style.display = 'none'; 
+            }  
+        });
+    });
+};
 
 
 
@@ -169,9 +172,3 @@ for (let i = 0; i < sertificat.length; i++) {
     //         };
     //     };
     // };
-
-
-
-
-
-

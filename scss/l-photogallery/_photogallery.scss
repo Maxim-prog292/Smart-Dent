@@ -40,19 +40,19 @@
         width: 555px;
         height: 555px;
         border-radius: 50px !important;
-        position: absolute;
+        position: fixed;
         margin-bottom: 0 !important;
         margin-top: 0 !important;
-        top: -150px;
+        top: 10%;
         z-index: 100;
         cursor: default !important;
         opacity: 0;
         animation: ani 0.5s forwards;
     }
     .closeBtn {
-        position: absolute;
-        top: -220px;
-        right: 300px;
+        position: fixed;
+        top: 2%;
+        right: 28%;
         padding: 30px;
         font-size: 38px;
         background: none;
