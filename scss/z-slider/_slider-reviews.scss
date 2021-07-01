@@ -80,7 +80,7 @@
                 }
             }
             .slider::after {
-                content: url(/images/cav.svg);
+                content: url(../images/cav.svg);
                 width: 20px;
                 height: 20px;
                 position: absolute;
@@ -88,7 +88,7 @@
                 right: 20px;
             }
             .slider::before {
-                content: url(/images/cav.svg);
+                content: url(../images/cav.svg);
                 width: 20px;
                 height: 20px;
                 position: absolute;
