@@ -91,7 +91,7 @@ for (let i = 0; i < image.length; i++) {
     image[i].addEventListener('click', function() {
 
         const img = document.createElement('img');
-        img.src = `/images/img${i+1}.jpg`;
+        img.src = `images/img${i+1}.jpg`;
         img.classList.add('img-open');
         
         photogallery.appendChild(img);
@@ -121,7 +121,7 @@ for (let i = 0; i < sertificat.length; i++) {
     sertificat[i].addEventListener('click', function() {
 
         const sertificatCreated = document.createElement('img');
-        sertificatCreated.src = `/images/serteficat${i+1}.jpg`;
+        sertificatCreated.src = `images/serteficat${i+1}.jpg`;
         sertificatCreated.classList.add('img-open');
         
         certificates.appendChild(sertificatCreated);

@@ -1802,12 +1802,12 @@ header {
               justify-content: space-between; }
       #footer .contacts .socseti .insta, #footer .contacts .socseti .whatsapp {
         display: block;
-        background: #fff url(/images/Vector.svg) no-repeat center;
+        background: #fff url("images/Vector.svg") no-repeat center;
         width: 55px;
         height: 55px;
         border-radius: 50%; }
       #footer .contacts .socseti .whatsapp {
-        background: #fff url(/images/whatsapp.svg) no-repeat center; }
+        background: #fff url("images/whatsapp.svg") no-repeat center; }
 
 @media (max-width: 1024px) {
   header .header-menu .container-top {
