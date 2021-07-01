@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+
     //     function prevMenu() {
 
     //         const mobileMenu = document.getElementById('mobile-menu');
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
- }, false);
+
  
     // for (let k = 0; k < sliderLine.length; k++) {
 
