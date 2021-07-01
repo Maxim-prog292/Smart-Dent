@@ -195,7 +195,7 @@
                     cursor: pointer;
                 }
                 input#consultation_personaldata:checked + [for='consultation_personaldata']::after {
-                    background: url('/images/checked.svg') no-repeat center/90%;
+                    background: url(../images/checked.svg) no-repeat center/90%;
                 }
             }
         }

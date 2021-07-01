@@ -1483,7 +1483,7 @@ header {
           left: -30px;
           cursor: pointer; }
         #consultation .consultation-form .form div.personaldata input#consultation_personaldata:checked + [for='consultation_personaldata']::after {
-          background: url("/images/checked.svg") no-repeat center/90%; }
+          background: url(../images/checked.svg) no-repeat center/90%; }
   #consultation .thanks {
     width: 100%;
     display: none;
@@ -1683,8 +1683,9 @@ header {
       margin: 0 0 25px 5px;
       text-decoration: none;
       line-height: 2; }
-    #contacts .address .map iframe {
-      border-radius: 15px; }
+    #contacts .address iframe {
+      border-radius: 15px !important;
+      border: none !important; }
 
 #footer {
   width: 100%;
@@ -1793,12 +1794,12 @@ header {
               justify-content: space-between; }
       #footer .contacts .socseti .insta, #footer .contacts .socseti .whatsapp {
         display: block;
-        background: #fff url("/images/Vector.svg") no-repeat center;
+        background: #fff url(../images/Vector.svg) no-repeat center;
         width: 55px;
         height: 55px;
         border-radius: 50%; }
       #footer .contacts .socseti .whatsapp {
-        background: #fff url("/images/whatsapp.svg") no-repeat center; }
+        background: #fff url(../images/whatsapp.svg) no-repeat center; }
 
 @media (max-width: 1024px) {
   header .header-menu .container-top {
@@ -2699,7 +2700,7 @@ header {
         left: -30px;
         cursor: pointer; }
       #modal .form div.personaldata input:checked + [for='modal_personaldata']::after {
-        background: url("/images/checked.svg") no-repeat center/90%; }
+        background: url(../images/checked.svg) no-repeat center/90%; }
 
 #back {
   width: 90000px;

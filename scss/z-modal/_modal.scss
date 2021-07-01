@@ -182,7 +182,7 @@
                 cursor: pointer;
             }
             input:checked + [for='modal_personaldata']::after {
-                background: url('/images/checked.svg') no-repeat center/90%;
+                background: url(../images/checked.svg) no-repeat center/90%;
             }
         }
     }

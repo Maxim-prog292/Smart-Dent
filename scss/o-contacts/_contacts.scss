@@ -57,8 +57,9 @@
             text-decoration: none;
             line-height: 2;
         }
-        .map iframe {
-            border-radius: 15px;
+        iframe {
+            border-radius: 15px !important;
+            border:none !important;
         }
     }
 }
