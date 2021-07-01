@@ -305,8 +305,6 @@ header {
             font-size: 18px;
             font-weight: 600;
             font-family: "Montserrat", sans-serif; }
-          header .header-rec .container .rec-form-no-blur .description p:nth-child(1) {
-            white-space: wrap; }
           header .header-rec .container .rec-form-no-blur .description img {
             display: none;
             margin-top: 5px;
@@ -628,8 +626,6 @@ header {
     color: #127BD7;
     font-size: 20px;
     cursor: pointer;
-    -webkit-box-sizing: padding-box;
-            box-sizing: padding-box;
     -webkit-transition: 450ms;
     transition: 450ms;
     font-weight: 700; }
@@ -639,18 +635,14 @@ header {
     margin: 0;
     background: #127BD7;
     border: none;
-    color: #fff;
-    -webkit-box-sizing: padding-box;
-            box-sizing: padding-box; }
+    color: #fff; }
   #services input[type='button']:active {
     width: 240px;
     height: 65px;
     margin: 5px;
     background: #2879BD;
     border: none;
-    color: #fff;
-    -webkit-box-sizing: padding-box;
-            box-sizing: padding-box; }
+    color: #fff; }
 
 #stocks {
   width: 100%;
@@ -1491,8 +1483,7 @@ header {
           left: -30px;
           cursor: pointer; }
         #consultation .consultation-form .form div.personaldata input#consultation_personaldata:checked + [for='consultation_personaldata']::after {
-          background: url(/images/checked.svg) no-repeat center/90%;
-          background-size: content-box; }
+          background: url("/images/checked.svg") no-repeat center/90%; }
   #consultation .thanks {
     width: 100%;
     display: none;
@@ -1802,12 +1793,12 @@ header {
               justify-content: space-between; }
       #footer .contacts .socseti .insta, #footer .contacts .socseti .whatsapp {
         display: block;
-        background: #fff url("images/Vector.svg") no-repeat center;
+        background: #fff url("/images/Vector.svg") no-repeat center;
         width: 55px;
         height: 55px;
         border-radius: 50%; }
       #footer .contacts .socseti .whatsapp {
-        background: #fff url("images/whatsapp.svg") no-repeat center; }
+        background: #fff url("/images/whatsapp.svg") no-repeat center; }
 
 @media (max-width: 1024px) {
   header .header-menu .container-top {
@@ -2708,8 +2699,7 @@ header {
         left: -30px;
         cursor: pointer; }
       #modal .form div.personaldata input:checked + [for='modal_personaldata']::after {
-        background: url(/images/checked.svg) no-repeat center/90%;
-        background-size: content-box; }
+        background: url("/images/checked.svg") no-repeat center/90%; }
 
 #back {
   width: 90000px;

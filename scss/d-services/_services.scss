@@ -61,7 +61,6 @@
         color: $main-color;
         font-size: 20px;
         cursor: pointer;
-        box-sizing: padding-box;
         transition: 450ms;
         font-weight: 700;
     }
@@ -72,7 +71,6 @@
         background: $main-color;
         border: none;
         color: #fff;
-        box-sizing: padding-box;
     }
     input[type='button']:active {
         width: 240px;
@@ -81,7 +79,6 @@
         background: #2879BD;
         border: none;
         color: #fff;
-        box-sizing: padding-box;
     }
 
 }

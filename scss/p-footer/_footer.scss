@@ -77,13 +77,13 @@
             justify-content: space-between;
             .insta, .whatsapp {
                 display: block;
-                background: #fff url('images/Vector.svg') no-repeat center;
+                background: #fff url('/images/Vector.svg') no-repeat center;
                 width: 55px;
                 height: 55px;
                 border-radius: 50%;
             }
             .whatsapp {
-                background: #fff url('images/whatsapp.svg') no-repeat center;
+                background: #fff url('/images/whatsapp.svg') no-repeat center;
             }
         }
         
